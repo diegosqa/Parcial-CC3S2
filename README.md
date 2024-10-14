@@ -26,4 +26,9 @@ Palabras raramente comunes, ademas de la complejidad de la longitud.
 `Pistas:`  
    - Es una institución educativa superior.  
    - Ofrece licenciaturas y posgrados.
-   - Los estudiantes mayores asisten aquí.
+   - Los estudiantes mayores asisten aquí.  
+     
+# Implementación de la clase Difficulty
+La siguiente clase tiene un método `obtener_archivo_por_dificultad()`, el usuario al principio ingresa la dificultadad, entonces dependiendo de eso, el método devuelve el archivo txt correspondiente que tiene todas las palabras correspondientes a esa dificultad.  
+  
+![](img/DifficultyClass.png)
