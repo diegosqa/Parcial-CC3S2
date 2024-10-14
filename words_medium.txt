@@ -1,0 +1,10 @@
+ESCUELA,Es un lugar de aprendizaje,Tiene aulas y maestros,Los estudiantes asisten aquí
+CIUDAD,Es un lugar grande donde vive mucha gente,Hay edificios y calles,Los coches circulan por aquí
+AVIÓN,Es un medio de transporte,Viaja por el aire,Tiene alas
+COCINA,Es una parte de la casa,Aquí se preparan los alimentos,Hay una estufa y refrigerador
+MONTAÑA,Es una elevación natural del terreno,Suele tener nieve en la cima,Los excursionistas disfrutan escalarlas
+LIBRO,Es un objeto de lectura,Contiene páginas,Se encuentra en bibliotecas
+PUERTA,Es una parte de una construcción,Se abre y cierra,Permite el acceso a un lugar
+JARDÍN,Es un espacio con plantas,Se encuentra afuera de las casas,Suele tener flores y césped
+CALLE,Es un camino por donde circulan vehículos,Se encuentra en las ciudades,Suele tener aceras a los lados
+RELOJ,Es un instrumento para medir el tiempo,Tiene agujas o pantalla digital,Suele estar en la muñeca o en la pared

@@ -1,0 +1,10 @@
+AUTOMÓVIL,Es un medio de transporte,Funciona con motor,Se desplaza sobre cuatro ruedas
+ORQUESTA,Es un grupo de músicos,Utilizan instrumentos como violines y trompetas,Tocan música clásica
+BIBLIOTECA,Es un lugar lleno de libros,Se presta libros para leer,Es un sitio de estudio y lectura
+COMPUTADORA,Es un dispositivo electrónico,Se usa para trabajar, navegar por internet y más,Tiene teclado, pantalla y procesador
+UNIVERSIDAD,Es una institución educativa superior,Ofrece licenciaturas y posgrados,Los estudiantes mayores asisten aquí
+MICROSCOPIO,Es un instrumento de laboratorio,Permite observar objetos muy pequeños,Se utiliza en ciencia y biología
+TELEVISIÓN,Es un aparato electrónico,Emite imágenes y sonido,Se utiliza para entretenimiento
+TELESCOPIO,Es un instrumento óptico,Permite observar objetos lejanos,Se utiliza para observar estrellas y planetas
+PLANETARIO,Es un lugar educativo,Simula el espacio y las estrellas,Suele tener proyecciones astronómicas
+AERONAVE,Es un vehículo que vuela,Puede ser un avión o helicóptero,Se usa para transporte aéreo
