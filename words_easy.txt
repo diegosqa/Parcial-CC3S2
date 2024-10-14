@@ -1,0 +1,10 @@
+CASA,Es un lugar donde vives,Tiene paredes y un techo,La mayoría de las personas duermen aquí
+PERRO,Es un animal doméstico,Ladra,Es el mejor amigo del hombre
+FLOR,Es una planta colorida,Tiene pétalos,Suele oler bien
+SOL,Es una estrella,Brilla durante el día,Es esencial para la vida en la Tierra
+MESA,Es un mueble,Tiene patas,Se utiliza para comer o trabajar
+GATO,Es un animal doméstico,Tiene bigotes,Suele cazar ratones
+LUNA,Es un satélite natural,Brilla en la noche,Tiene fases visibles desde la Tierra
+CIELO,Es azul durante el día,Está arriba,Contiene nubes y estrellas
+AGUA,Es un líquido esencial,Es incolora e inodora,Se encuentra en ríos y mares
+CARRO,Es un vehículo,Tiene cuatro ruedas,Se usa para transporte personal
