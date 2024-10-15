@@ -12,7 +12,24 @@ class Hangman:
         self.puntos = {}
         self.turno = 0  
 
+    def seleccionar_dificultad(self):
+        print("Selecciona un nivel de dificultad:")
+        print("1. Fácil (4-6 letras)")
+        print("2. Medio (7-9 letras)")
+        print("3. Difícil (10 letras o más)")
 
+        nivel = input("Introduce el número de la dificultad: ")
+
+        if nivel == '1':
+            return 'fácil'
+        elif nivel == '2':
+            return 'medio'
+        elif nivel == '3':
+            return 'difícil'
+        else:
+            print("Opción inválida, empieza en nivel facil")
+            return 'fácil'
+    
     def iniciar_juego(self):
       
       
