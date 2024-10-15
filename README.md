@@ -10,11 +10,11 @@ Se creó el constructor de la clase donde guardas informacion como el nombre del
 
   ![](img/wordManagerConstructor.png)
 + Función `cargar_palabras`:  
-  En esta parte del codigo, se desarrollo la logica para obtener la data correspodiente a las palabras y respectivas pistas, finalmente devolvemos la data sin espacios y separadas por una `,` en una lista de comprension.
+  En esta parte del codigo, se desarrollo la logica para obtener la data correspodiente a las palabras y respectivas pistas, finalmente devolvemos la data sin espacios y separadas por una `,` en una lista de comprension.  
 ![](img/cargar_palabras.png)
 
 + Función `seleccionar_todas_las_palabras`:  
-Asi mismo, esta parte de codigo selecciona todas las palabras y pistas correspondientes, los mezcla en un orden aleatorio.
+Asi mismo, esta parte de codigo selecciona todas las palabras y pistas correspondientes, los mezcla en un orden aleatorio.  
 ![](img/seleccionarpalabras.png)
 
 ### Integracion de las Palabras
