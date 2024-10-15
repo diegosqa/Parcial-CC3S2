@@ -5,17 +5,17 @@
 ### Implementacion de la clase word_manager
 Se implemento la clase `word_manger` para gestionar las palabras y pistas correspondientes a la dificultad desde un archivo de texto.  
 
-+ Función `Constructor`:
-![](img/wordManagerConstructor.png)
++ Función `Constructor`:  
 Se creó el constructor de la clase donde guardas informacion como el nombre del archivo a obtener la data y almacenar las palabras y pistas correspondientes.  
 
-+ Función `cargar_palabras`:
+  ![](img/wordManagerConstructor.png)
++ Función `cargar_palabras`:  
+  En esta parte del codigo, se desarrollo la logica para obtener la data correspodiente a las palabras y respectivas pistas, finalmente devolvemos la data sin espacios y separadas por una `,` en una lista de comprension.
 ![](img/cargar_palabras.png)
-En esta parte del codigo, se desarrollo la logica para obtener la data correspodiente a las palabras y respectivas pistas, finalmente devolvemos la data sin espacios y separadas por una `,` en una lista de comprension.
 
-+ Función `seleccionar_todas_las_palabras`:
-![](img/seleccionarpalabras.png)
++ Función `seleccionar_todas_las_palabras`:  
 Asi mismo, esta parte de codigo selecciona todas las palabras y pistas correspondientes, los mezcla en un orden aleatorio.
+![](img/seleccionarpalabras.png)
 
 ### Integracion de las Palabras
 Se creo y implemento las palabras segun la dificultad elegida por el jugador 
