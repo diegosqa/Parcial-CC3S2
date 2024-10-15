@@ -2,7 +2,7 @@ class Difficulty:
     def __init__(self, nivel):
         self.nivel = nivel
 
-    # Obtener el archivo de palabras correspondiente al nivel de dificultad    
+    # Obtener el archivo de palabras correspondiente al nivel de dificultad
     def obtener_archivo_por_dificultad(self):
         if self.nivel == 'fácil':
             return 'words_easy.txt'
