@@ -84,7 +84,7 @@ class Hangman:
                 puntos = self.calcular_puntos(jugador_actual, self.game_state.letras_adivinadas, len(self.game_state.letras_incorrectas))
                 self.puntos[jugador_actual] += puntos
                 print(f"{jugador_actual} ganó {puntos} puntos en esta palabra.")
-                break  # Termina el turno porque la palabra fue adivinada
+                break  
             else:
               
                 self.turno = (self.turno + 1) % 2
@@ -100,7 +100,6 @@ class Hangman:
         for palabra, pista1, pista2, pista3 in palabras_y_pistas:
             print("\nNueva palabra para adivinar:")
             self.jugar_turno(palabra, [pista1, pista2, pista3])
-            # Mostrar el puntaje actual después de cada palabra adivinada
             print(f"Puntaje actual: {self.jugadores[0]} - {self.puntos[self.jugadores[0]]} | {self.jugadores[1]} - {self.puntos[self.jugadores[1]]}")
 
       
