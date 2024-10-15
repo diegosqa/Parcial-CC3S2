@@ -26,7 +26,56 @@ Palabras raramente comunes, ademas de la complejidad de la longitud.
 `Pistas:`  
    - Es una institución educativa superior.  
    - Ofrece licenciaturas y posgrados.
-   - Los estudiantes mayores asisten aquí.  
+   - Los estudiantes mayores asisten aquí.
+
+## Rama: `feature/diego/infraestructura`
+
+Esta rama contiene la implementación de la infraestructura necesaria para ejecutar el juego de ahorcado utilizando Docker, CI/CD con GitHub Actions, y monitoreo con Prometheus.
+
+### 1. Docker Compose
+
+**Archivo: `docker-compose.yml`**
+
+![Docker Compose](img/docker-compose.png)
+
+#### Descripción
+
+- **Versión**: Se especifica la versión de Docker Compose a utilizar.
+- **Servicios**:
+  - **app**: Se construye a partir del `Dockerfile` en el directorio raíz del proyecto. Expone el puerto 8000 para que la aplicación de consola pueda ser accesible (esto será útil para el monitoreo).
+  - **prometheus**: Se utiliza la imagen oficial de Prometheus. Se expone el puerto 9090 y se monta un archivo de configuración que define cómo debe recolectar las métricas.
+  - **grafana**: Se utiliza la imagen oficial de Grafana y se expone el puerto 3000 para acceder a la interfaz de Grafana.
+
+### 2. CI/CD (GitHub Actions)
+
+**Archivo: `.github/workflows/ci.yml`**
+
+![CI/CD](img/ci.png)
+
+#### Descripción
+
+- **Nombre del flujo de trabajo**: Se llama "CI".
+- **Eventos**:
+  - Se activa en `push` y `pull_request` en la rama principal (`main`).
+- **Jobs**:
+  - **test**: Se ejecuta en un entorno de Ubuntu y realiza las siguientes acciones:
+    - Clona el repositorio.
+    - Configura Python en la versión especificada.
+    - Instala las dependencias desde `requirements.txt`.
+    - Ejecuta los tests utilizando `pytest`.
+
+### 3. Prometheus
+
+**Archivo: `prometheus.yml`**
+
+![Prometheus](img/prometheus.png)
+
+#### Descripción
+
+- **Configuración Global**:
+  - **scrape_interval**: Define cada cuánto tiempo Prometheus debe recolectar métricas (en este caso, cada 15 segundos).
+- **Scrape Configurations**:
+  - Se configura un trabajo llamado "hangman" que le dice a Prometheus que recolecte métricas del servicio `app` en el puerto especificado.
      
 # Implementación de la clase Difficulty
 La siguiente clase tiene un método `obtener_archivo_por_dificultad()`, el usuario al principio ingresa la dificultadad, entonces dependiendo de eso, el método devuelve el archivo txt correspondiente que tiene todas las palabras correspondientes a esa dificultad.  
