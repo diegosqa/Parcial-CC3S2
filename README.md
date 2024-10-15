@@ -1,4 +1,32 @@
 # Parcial-CC3S2
+  
+## División de Responsabilidades  
+**Manuel Ravichagua**:  
+
+Ramas usadas:  
++ **feature-ravichagua-words**:  
++ **feature-ravichagua-dificultad**:  
++ **feature-ravichagua-wordManager**: 
+  
+
+**Juan Silva**:  
+
+Ramas usadas:  
++ **feature-silva-DifficultyClass**: Usado para implementar la clase Difficulty para obtener el archivo txt con las palabras a adivinar segun dificultad
++ **feature-silva-GameStateClass**:  Usado para implementar la clase GameState para gestionar el estado del juego.
+  
+
+**Diego Quispe**:  
+
+Ramas usadas:  
++ **feature/diego/infraestructura**:  
++ **feature/diego/hangman**:      
+
+   
+    
+Para este trabajo de realizó el desarrollo basado en troncales:  
+  
+![](img/troncales-grafica.png)
 
 ## Rama: `feature-ravichagua-wordManager`
 
@@ -225,3 +253,14 @@ Esta función verifica si el jugador ya ha adivinado todas las palabras, devolv�
 Esta función verifica si el juego ya ha terminado, esto es si el jugador ya ha ganado el juego o si su numero de intentos se han acabado  
   
 ![](img/gameState-juego-terminado.png)
+  
+    
+# Implementación de las pruebas BDD  
+Se implementó los siguientes escenarios de la imágen para garantizar que el sistema está respondiendo correctamente cuando el jugador adivina una palabra y/o letra correcta e incorrectamente.  
+
+![](img/features-escenarios.png)  
+  
+Resultado:  
+  
+
+![](img/features-resultado.png)
