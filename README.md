@@ -1,6 +1,23 @@
 # Parcial-CC3S2
 
-# Integracion de las Palabras
+## Rama: `feature-ravichagua-wordManager`
+
+### Implementacion de la clase word_manager
+Se implemento la clase `word_manger` para gestionar las palabras y pistas correspondientes a la dificultad desde un archivo de texto.  
+
++ Función `Constructor`:
+![](img/wordManagerConstructor.png)
+Se creó el constructor de la clase donde guardas informacion como el nombre del archivo a obtener la data y almacenar las palabras y pistas correspondientes.  
+
++ Función `cargar_palabras`:
+![](img/cargar_palabras.png)
+En esta parte del codigo, se desarrollo la logica para obtener la data correspodiente a las palabras y respectivas pistas, finalmente devolvemos la data sin espacios y separadas por una `,` en una lista de comprension.
+
++ Función `seleccionar_todas_las_palabras`:
+![](img/seleccionarpalabras.png)
+Asi mismo, esta parte de codigo selecciona todas las palabras y pistas correspondientes, los mezcla en un orden aleatorio.
+
+### Integracion de las Palabras
 Se creo y implemento las palabras segun la dificultad elegida por el jugador 
 con sus respectivas pistas de acuerdo al numero de intentos
 
@@ -76,87 +93,6 @@ Esta rama contiene la implementación de la infraestructura necesaria para ejecu
   - **scrape_interval**: Define cada cuánto tiempo Prometheus debe recolectar métricas (en este caso, cada 15 segundos).
 - **Scrape Configurations**:
   - Se configura un trabajo llamado "hangman" que le dice a Prometheus que recolecte métricas del servicio `app` en el puerto especificado.
- 
-# Implementación de la Clase Hangman
-
-### 1. Constructor
-
-**Archivo: `hangman.py`**
-
-![Hangman Constructor](img/Hangman-Constructor.png)
-
-#### Descripción
-
-- El constructor inicializa los siguientes atributos:
-  - **`word_manager`**: Gestiona las palabras del juego.
-  - **`game_state`**: Mantiene el estado actual del juego.
-  - **`difficulty`**: Almacena el nivel de dificultad seleccionado.
-  - **`jugadores`**: Lista de nombres de los jugadores.
-  - **`puntos`**: Diccionario que mantiene los puntos de cada jugador.
-  - **`turno`**: Índice del jugador cuyo turno está activo.
-
-### 2. Selección de Dificultad
-
-**Método: `seleccionar_dificultad()`**
-
-![Hangman Selección de Dificultad](img/Hangman-SeleccionarDifi.png)
-
-#### Descripción
-
-- Este método presenta tres opciones de dificultad: Fácil, Medio, Difícil.
-- Recoge la entrada del usuario para seleccionar el nivel y retorna el nivel de dificultad elegido.
-
-### 3. Inicialización del Juego
-
-**Método: `iniciar_juego()`**
-
-![Hangman Iniciar Juego](img/Hangman-IniciarJuego.png)
-
-#### Descripción
-
-- Configura el nivel de dificultad seleccionado y asigna el archivo correspondiente de palabras.
-- Pide a los jugadores que ingresen sus nombres y asigna sus puntos iniciales a 0.
-
-### 4. Cálculo de Puntos
-
-**Método: `calcular_puntos()`**
-
-![Hangman Cálculo de Puntos](img/Hangman-CalcularPuntos.png)
-
-#### Descripción
-
-- Calcula los puntos en base a:
-  - **`puntos_letras`**: Número de letras adivinadas correctamente.
-  - **`penalización_errores`**: Descuento por cada error cometido.
-  - **`bonificación_palabra`**: Bonificación fija por adivinar correctamente la palabra.
-
-### 5. Jugar un Turno
-
-**Método: `jugar_turno()`**
-
-![Hangman Turno](img/Hangman-Turno.png)
-
-#### Descripción
-
-- Este método ejecuta el ciclo principal del turno de cada jugador:
-  - Muestra el estado actual de la palabra.
-  - El jugador intenta adivinar una letra.
-  - Alterna entre los jugadores hasta que se adivine la palabra o se terminen los intentos.
-
-### 6. Jugar
-
-**Método: `jugar()`**
-
-![Hangman Jugar](img/Hangman-Jugar.png)
-
-#### Descripción
-
-- Controla el flujo general del juego, llamando a `jugar_turno()` para cada palabra y muestra el puntaje final de los jugadores al final del juego.
-
-### 7. Ejecución del Juego
-
-![Hangman Jugar](img/Hangman-Ejecución.png)
-
      
 # Implementación de la clase Difficulty
 La siguiente clase tiene un método `obtener_archivo_por_dificultad()`, el usuario al principio ingresa la dificultadad, entonces dependiendo de eso, el método devuelve el archivo txt correspondiente que tiene todas las palabras correspondientes a esa dificultad.  
