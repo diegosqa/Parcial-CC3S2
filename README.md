@@ -4,10 +4,9 @@
 **Manuel Ravichagua**:  
 
 Ramas usadas:  
-+ **feature-ravichagua-words**:  
-+ **feature-ravichagua-dificultad**:  
-+ **feature-ravichagua-wordManager**: 
-  
++ **feature-ravichagua-words**: Usado para introducir la data correspondiente a cada palabra y pista segun dificultad.
++ **feature-ravichagua-dificultad**: Usado para la implementacion de seleccion de dificultad antes de empezar el 0juego.
++ **feature-ravichagua-wordManager**: Usado para la implementacion de la clase WordManager, la cual guarda y carga la data de las palabras y pistas del archivo. 
 
 **Juan Silva**:  
 
