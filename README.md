@@ -26,7 +26,45 @@ Ramas usadas:
     
 Para este trabajo de realizó el desarrollo basado en troncales:  
   
-![](img/troncales-grafica.png)
+![](img/troncales-grafica.png)  
+  
+## Ejecución del Juego  
+  
+Para ejecutar el juego se pone el siguiente comando en terminal  
+  
+```zsh
+  python -m src.game.hangman  
+```  
+  
+Si tienes algún error debido a que no encuentra el módulo game, entonces antes de poner el comando de arriba debes poner el siguiente comando:  
+  
+Desde powershell-window:  
+  
+```bash
+  $env:PYTHONPATH="src"
+```   
+  
+Desde terminal de linux:  
+```bash  
+  export PYTHONPATH="src"
+```  
+  
+Si todo ha salido bien entonces la ejecucion sería como la imágen de abajo, primero se nos pide seleccionar la dificultad, en el ejemplo ponemos dificultad media, luego nos solicitará los usernames de los 2 jugadores, en el ejemplo son Jason y Luisa.
+
+![](img/ejecucion-juego/01.png)    
+  
+El primer turno es de Jason, el deberá adivianar con una letra, en este caso fue con una M, letra incorrecta, por lo tanto se le muestra una pista y un mensaje indicando que su letra es incorrecta, posteriormente se pasa el turno a Luisa.
+  
+![](img/ejecucion-juego/02.png)    
+  
+El flujo del juego continua como muestra la imágen: 
+  
+![](img/ejecucion-juego/03.png)  
+  
+
+Al final cuando el último jugador adivina la última letra para adivinar toda la palabra entonces muestra un mensaje de felicitaciones junto con el score, y pasa a una nueva ronda con una nueva palabra:  
+
+![](img/ejecucion-juego/04.png)
 
 ## Rama: `feature-ravichagua-wordManager`
 
