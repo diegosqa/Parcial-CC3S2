@@ -19,8 +19,8 @@ Ramas usadas:
 **Diego Quispe**:  
 
 Ramas usadas:  
-+ **feature/diego/infraestructura**:  
-+ **feature/diego/hangman**:      
++ **feature/diego/infraestructura**:  Usado para implementar la infraestructura necesaria para desplegar el juego, incluyendo el ci.yml para el CI/CD de github
++ **feature/diego/hangman**: Desarrollo de la clase principal hangman      
 
    
     
